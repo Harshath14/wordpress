@@ -9,10 +9,10 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=somewordpress
+      - MYSQL_ROOT_PASSWORD=harshath4891
       - MYSQL_DATABASE=wordpress
-      - MYSQL_USER=wordpress
-      - MYSQL_PASSWORD=wordpress
+      - MYSQL_USER=harshath
+      - MYSQL_PASSWORD=harshath4891
     expose:
       - 3306
       - 33060
@@ -24,9 +24,9 @@ services:
       - 80:80
     restart: always
     environment:
-      - WORDPRESS_DB_HOST=db
-      - WORDPRESS_DB_USER=wordpress
-      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_HOST=wordpress.ct2qacwoeede.us-east-1.rds.amazonaws.com
+      - WORDPRESS_DB_USER=harshath
+      - WORDPRESS_DB_PASSWORD=harshath4891
       - WORDPRESS_DB_NAME=wordpress
 volumes:
   db_data:
