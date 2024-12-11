@@ -17,7 +17,7 @@ resource "aws_instance" "wordpress" {
   security_groups = [aws_security_group.wordpress_sg.name]
 }
 
-resource "aws_security_group" "wordpress_sg" {
+resource "aws_security_group" "wordpress_sg1" {
   name        = "wordpress-sg"
   description = "Allow HTTP, HTTPS, and SSH traffic"
 
