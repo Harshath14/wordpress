@@ -26,7 +26,7 @@ mv wp-config-sample.php wp-config.php
 sed -i "s/database_name_here/wordpress/" wp-config.php
 sed -i "s/username_here/harshath/" wp-config.php
 sed -i "s/password_here/harshath4891/" wp-config.php
-sed -i "s/localhost/wordpress.ct2qacwoeede.us-east-1.rds.amazonaws.com/" wp-config.php
+sed -i "s/localhost/wordpress.ct2qacwoeede.us-east-1.rds.amazonaws.com
 
 # Restart Apache to apply changes
 sudo systemctl restart httpd
